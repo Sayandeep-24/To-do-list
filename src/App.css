@@ -13,7 +13,8 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: start;
-  width: 520px;
+  align-items: center;
+  max-width: 520px;
   min-height: 600px;
   background: #f4ebd9;
   text-align: center;
@@ -104,4 +105,38 @@ h1 {
 
 .edit-icon {
   color: #fff;
+}
+
+
+@media(max-width : 640px)
+{
+  #root
+  {
+    display : flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .todo-app {
+    min-width: 350px;
+    min-height: 500px;
+  }
+  .todo-input {
+    width: 200px;
+  }
+}
+
+@media(max-width : 470px)
+{
+  .todo-app {
+    min-width: 280px;
+    min-height: 500px;
+  }
+  .todo-input {
+    width: 160px;
+  }
+  h1{
+    font-size: 20px;
+  }
+
+  
 }
